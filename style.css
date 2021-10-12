@@ -59,13 +59,17 @@ div.list {
   display: list-item;
 }
 
-/* iframe {
+ iframe {
   width: 20%;
   height: 250px;
   display: ruby-base;
   text-align: center;
   padding-top: 20px;
-} */
+  border-radius: 20%;
+  position: relative;
+  top: 20px;
+  left: 800px;
+} 
 
 table {
   width: 30%;
