@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Testimonials</title>
+
+
+<style>
+    .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+        display: inline-block;
+        margin: 50px;
+        position: relative;
+        top: 50px;
+    }
+
+    body {
+        background-image: url(https://images.unsplash.com/photo-1633272485505-6d0346c7d46e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        background-position: center;
+
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+        /* background-color: rgb(0, 0, 0); */
+        color: black;
+        height: 250px;
+        width: 250px;
+        /* overflow: hidden; */
+    }
+
+    .flip-card-back {
+        background-color: #788d9b;
+        color: white;
+        transform: rotateY(180deg);
+        border-radius: 100%;
+        position: relative;
+        width: 300px;
+        height: 300px;
+    }
+
+    img {
+        height: 300px;
+        width: 300px;
+        border-radius: 100%;
+    }
+
+    h1.heading {
+        text-align: center;
+        color: rgb(89, 145, 131);
+        font-size: 100px;
+        margin-top: 10px;
+        margin-bottom: 3px;
+    }
+
+    h3 {
+        color: rgb(89, 145, 131);
+
+    }
+
+    li {
+        display: inline;
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+        padding-right: 20px;
+        font-size: large;
+        /* position: relative;
+        right: 850px; */
+        text-align: center;
+    }
+
+    nav {
+        background-color: rgb(55, 56, 56);
+        height: 30px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
+
+    p {
+        position: relative;
+        top: 100px;
+    }
+
+    h2 {
+        position: relative;
+        top: 100px;
+    }
+</style>
+
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="testimonial.html">Testimonials</a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+        </ul>
+    </nav>
+
+
+    <h1 class="heading">Testimonials</h1>
+    <h3>Hover over the images below to see tesimonials</h3>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="IMG-20211007-WA0004.jpg" alt="Kagiso">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2>Lilitha Mantini</h2>
+                        <p>Backend Developer</p>
+                        <p>Smart guy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="profile.jpg" alt="Kagiso">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2>Azabenathi Pupuma</h2>
+                        <p>Full Stack Developer</p>
+                        <p>Hard worker</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="IMG_20210627_090912.jpg" alt="Kagiso">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2>Kagiso Mphayi</h2>
+                        <p>Frontend Developer</p>
+                        <p>Reliable guy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="IMG-20211008-WA0004.jpg" alt="Kagiso">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2>Jude Julius</h2>
+                        <p>Backend Developer</p>
+                        <p>Humble guy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="IMG-20211008-WA0006.jpg" alt="Kagiso">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2>Bulela Gomoshe</h2>
+                        <p>Full stack Developer</p>
+                        <p>Great Leader</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="IMG-20211008-WA0005.jpg" alt="Kagiso">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2>Xola Magatya</h2>
+                        <p>Frontend Developer</p>
+                        <p>Always aiming high</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
